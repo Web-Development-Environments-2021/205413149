@@ -2,17 +2,19 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="TfohiscX"></script>
 </head>
 <body>
 <div id="menu" class="topnav">  
   
-    <a href="#about">About Me</a>       
-    <a href="#photos">My Photos</a>
-    <a href="#playlist">My Playlist</a>
-    <a href="#like">Like</a>
-    <a href="#qrcoder">QR code</a>
-    <a href="#spa">Q&A</a></li>
-    <a href="#contact">Contact Me</a>
+    <a class="hoverable" href="#about">About Me</a>       
+    <a class="hoverable" href="#photos">My Photos</a>
+    <a class="hoverable" href="#playlist">My Playlist</a>
+    <a class="hoverable" href="#like">Like</a>
+    <a class="hoverable" href="#qrcoder">QR code</a>
+    <a class="hoverable" href="#spa">Q&A</a>
+    <a class="hoverable" href="#contact">Contact Me</a>
   
 </div>  	  
 <section id="about" class="section">
@@ -22,6 +24,13 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">About me
+  <p>My name is Itzhak Klinger, born on June the 2nd 1936 in a city named Chernovitz that back than was belong to Romania. <br>
+  I am married to my amazing wife Klara. I am a medicine doctor, worked by the age of 80 for few hospitals <br>
+  as deperatment manager. I love exotic trips, classical music, learning upon history's greatest leaders, and of course, my wife's food. <br>
+  I am a curiuos person and I believe that age is only mental!.
+  </p>
+  </p>
 <br/>
 <br/>
 <br/>
@@ -32,7 +41,6 @@
 <br/>
 <br/>
 <br/>
-<p class="scrolled">about me</p>
 <br/>
 <br/>
 <br/>
@@ -45,6 +53,10 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">My photos</p>
+<img src="./media/family.png" width="600" height="400">
+<br>
+<img src="./media/purim.jpeg" width="580" height="400">
 <br/>
 <br/>
 <br/>
@@ -55,7 +67,6 @@
 <br/>
 <br/>
 <br/>
-<p class="scrolled">my photos</p>
 <br/>
 <br/>
 <br/>
@@ -68,6 +79,13 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">My playlist</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sbTVZMJ9Z2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br/>
+<br/>
+<p style="color:rgb(10, 128, 128); font-family:sans-serif; font-size:20px">My grandson playing</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ktCTLHrQIbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
@@ -77,9 +95,8 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<p class="scrolled">my playlist</p>
-<br/>
+<br>
+<br>
 <br/>
 <br/>
 </section>
@@ -91,19 +108,13 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">Give me a like</p>
 <br/>
 <br/>
+<div class="fb-like" data-href="http://localhost:5500" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<p class="scrolled">give me a like</p>
-<br/>
-<br/>
+<p style="-webkit-transform: rotate(-45deg); font-size: large; color:rgb(14, 25, 179); font-family:sans-serif; font-size:20px">facebook like</p>
 <br/>
 </section>
 
@@ -114,6 +125,7 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">Scan my code</p>
 <br/>
 <br/>
 <br/>
@@ -124,7 +136,6 @@
 <br/>
 <br/>
 <br/>
-<p class="scrolled">scan my code</p>
 <br/>
 <br/>
 <br/>
@@ -137,6 +148,7 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">Ans</p>
 <br/>
 <br/>
 <br/>
@@ -147,7 +159,8 @@
 <br/>
 <br/>
 <br/>
-<p class="scrolled">ans</p>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -160,6 +173,32 @@
 <br/>
 <br/>
 <br/>
+<p class="scrolled">Contact me</p>
+<br/>
+<br/>
+<br/>
+<!-- <form action=mailto:guykling@post.bgu.ac.il”
+method="POST"
+enctype=”text/html”
+name=”EmailForm”>
+Name:<br>
+<input type=”text” size=”19″ name=ContactName placeholder="name"><br><br>
+E-mail:<br>
+<input type="email" size=”19″ name=email placeholder="your e-mail"><br><br>
+Message:<br> <textarea name=ContactComment rows=”100″ cols=”30″ placeholder="message">
+</textarea><br><br> <input type="submit" value="send e-mail">
+<input type="reset" value="reset"></form> -->
+<form action="https://formsubmit.co/guykling@post.bgu.ac.il" method="POST">
+  Name:<br>
+  <input class="contact-text" type="text" name="Contact name" required placeholder="name"><br><br>
+  E-mail:<br>
+  <input class="contact-text" type="email" name="Contact e-mail address" required placeholder="your e-mail"><br><br>
+  Message:<br> 
+  <textarea class="contact-text" name=Message placeholder="Message" rows=8 cols=”100″>
+  </textarea><br><br>
+  <button class="contact-btn" type="submit">Send</button>
+  <input class="contact-btn" type="reset" value="reset"></form>
+</form>
 <br/>
 <br/>
 <br/>
@@ -167,10 +206,6 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<p class="scrolled">contact me</p>
 <br/>
 <br/>
 <br/>
