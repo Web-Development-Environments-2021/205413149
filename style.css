@@ -197,6 +197,7 @@ section {
   box-sizing: content-box;
   border-radius: 2em;
   width: 400px;
+  position: relative;
 }
 
 .emojiPicker {
@@ -208,17 +209,15 @@ section {
 
   /* 7 emojis in row */
   width: 296px;
-  /* left: 750px;
-	bottom: 160px;	 */
   display: grid;
-  /* float:; */
-  /* bottom: -500px; */
   position: relative;
+  left: 1000px;
+  bottom: 155px;
 
   border: 1px solid #bcd6ec;
   background-color: rgb(207, 223, 236);
   border-radius: 10%;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 
   -webkit-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.75);
